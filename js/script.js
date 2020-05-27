@@ -4,8 +4,10 @@
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
 
-//variabili
-var multipliDiTre = document.getElementById('multipliTRE');
+//variabili html
+var outputTre = document.getElementById('outputMult3');
+var outputCinque = document.getElementById('outputMult5');
+var outputMult = document.getElementById('outputMult')
 
 // Stampo i numeri da 1 a 100
 
@@ -18,6 +20,7 @@ for ( var i = 1 ; i <= 100; i++) {
   // Scrivo Fizz.
 
   if  ((numeri % 3 === 0 ) && !( numeri % 5 == 0 )) {
+    outputTre.innerHTML += numeri + " <li> " + " Fizz. " + " </li> " + "  ";
 
     console.log( " Fizz. ");
   }
@@ -30,6 +33,8 @@ for ( var i = 1 ; i <= 100; i++) {
 
   else if  (( numeri % 5 == 0 ) && !(numeri % 3 === 0 ) ) {
     console.log( ' Buzz.');
+    outputCinque.innerHTML += numeri + " <li> " + " Buzz. " + " </li> " + "  ";
+
   }
 
   // CONDIZIONE:
@@ -38,7 +43,11 @@ for ( var i = 1 ; i <= 100; i++) {
   // Scrivo FizzBuzz.
 
   else if  ((numeri % 3 == 0) && (numeri % 5 == 0)) {
+
+
+    outputMult.innerHTML += numeri + " <li> " + " FizzBuzz. " + " </li> " + "  ";
     console.log(' FizzBuzz');
+
 
   }
 
@@ -50,5 +59,3 @@ for ( var i = 1 ; i <= 100; i++) {
   }
 
 }
-
-//Stampo
