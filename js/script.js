@@ -65,7 +65,7 @@
 //variabili html
 var outputTre = document.getElementById('outputMult3');
 var outputCinque = document.getElementById('outputMult5');
-var outputMult = document.getElementById('outputMult')
+var outputMult = document.getElementById('outputMult');
 
 // stampo i numeri da 1 a 100
 
@@ -74,20 +74,20 @@ while ( i <= 100) {
 
   var numeri = i;
 
-  if  ((numeri % 3 === 0 ) && !( numeri % 5 == 0 )) {
+  if  ((numeri % 3 === 0 ) && !( numeri % 5 === 0 )) {
     outputTre.innerHTML += numeri + " <li> " + " Fizz. " + " </li> " + " ---  ";
 
     console.log( " Fizz. ");
   }
 
 
-  else if  (( numeri % 5 == 0 ) && !(numeri % 3 === 0 ) ) {
+  else if  (( numeri % 5 === 0 ) && !(numeri % 3 === 0 ) ) {
     console.log( ' Buzz.');
     outputCinque.innerHTML += numeri + " <li> " + " Buzz. " + " </li> " + " --- ";
 
   }
 
-  else if  (numeri % 15 == 0) {
+  else if  (numeri % 15 === 0) {
     outputMult.innerHTML += numeri + " <li> " + " FizzBuzz. " + " </li> " + " --- ";
     console.log(' FizzBuzz');
 
