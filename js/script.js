@@ -4,12 +4,13 @@
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
 
-
+//variabili
+var multipliDiTre = document.getElementById('multipliTRE');
 
 // Stampo i numeri da 1 a 100
 
 for ( var i = 1 ; i <= 100; i++) {
-  var numeri = [i];
+  var numeri = i;
 
   // CONDIZIONE:
   // Se il numero diviso 3 da resto 0,  &
@@ -17,6 +18,7 @@ for ( var i = 1 ; i <= 100; i++) {
   // Scrivo Fizz.
 
   if  ((numeri % 3 === 0 ) && !( numeri % 5 == 0 )) {
+
     console.log( " Fizz. ");
   }
 
@@ -45,8 +47,11 @@ for ( var i = 1 ; i <= 100; i++) {
 
   // CONDIZIONE:
   // Se entrambi i valori non rispondono alle condizioni precedenti allora stampa il numero
-  else if (!(numeri % 3 == 0) && !(numeri % 5 == 0))  {
+  else {
+  if (!(numeri % 3 == 0) && !(numeri % 5 == 0))
     console.log(numeri);
   }
 
 }
+
+//Stampo
